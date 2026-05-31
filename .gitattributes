@@ -1,0 +1,11 @@
+# Normalize line endings to LF in the repo (avoids CRLF noise across OSes/CI).
+* text=auto eol=lf
+
+# Treat common binaries as binary (future-proof; none committed yet).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp4 binary

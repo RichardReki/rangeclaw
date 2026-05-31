@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+solc = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+evm_version = "paris"          # Mantle 兼容性更稳妥（避免 PUSH0 相关问题）
+
+# 依赖（首次需安装）：
+#   forge install foundry-rs/forge-std
+# 见 remappings.txt
+
+[rpc_endpoints]
+mantle_sepolia = "${MANTLE_SEPOLIA_RPC_URL}"
+
+[etherscan]
+# 官方提交只要求"合约地址"，不要求源码 verify；如自愿 verify 再填。
+mantle_sepolia = { key = "${EXPLORER_API_KEY}", chain = 5003, url = "${EXPLORER_VERIFY_URL}" }

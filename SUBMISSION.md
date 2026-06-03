@@ -11,7 +11,7 @@
 ✅ GitHub 仓库  https://github.com/RichardReki/rangeclaw
 ✅ ② 合约已部署 + 链上核验  0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF
 ✅ ③ 地址已回填（README + web/.env.local）
-⬜ ④ (可选) 让 agent 写真实决策上链
+✅ ④ 真实决策已上链 + boundHash 独立复算一致（decisionCount=1）
 ⬜ ⑤ Vercel 部署   ← 你在这里   ⬜ ⑥ 录视频   ⬜ ⑦ 核对 DoraHacks 表单   ⬜ ⑧ 提交
 ```
 
@@ -61,8 +61,11 @@ forge script script/Deploy.s.sol:Deploy --rpc-url https://rpc.sepolia.mantle.xyz
 - [x] 填入 [README](README.md) "已部署合约"表 → `0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`
 - [x] 填入 `web/.env.local` 的 `VITE_REGISTRY_ADDRESS`（看板可切 LIVE）
 
-## ④ （可选，加分）让 agent 写几条真实决策上链 🧑
-- 设 `ENABLE_ONCHAIN_WRITE=true` + agent operator 私钥，跑一次，让链上真有 `DecisionRecorded` 记录，demo 里"连真链核验"就有真数据。
+## ④ 让 agent 写真实决策上链 🧑 ✅ 已完成 + 链上核验
+- `npm run record`（agent/.env 设 `ENABLE_ONCHAIN_WRITE=true` + burner 私钥）→ registerAgent + recordDecision。
+- 链上核验（`cast`）：`decisionCount=1`、记录 #0 = Rebalance、agentId=1。
+- decisionHash `0x59eab72b…a2c0`；boundHash `0x1f46f12a…efd8` —— 用合约同款公式从链上字段**独立重算一致**，证明 合约=agent=看板 三处哈希派生完全对齐。
+- recordDecision tx `0x1a4262d1…e39b7`（Success）。
 
 ## ⑤ Vercel 部署（公开 URL，非 localhost）🧑
 - [ ] [vercel.com](https://vercel.com) → New Project → 导入 `RichardReki/rangeclaw`

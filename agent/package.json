@@ -6,6 +6,7 @@
   "description": "RangeClaw — AI LP 做市管家 agent backend (Monitor -> Decide -> Hash -> Attest)",
   "scripts": {
     "demo": "tsx src/demo.ts",
+    "record": "tsx src/record-onchain.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },

@@ -17,6 +17,16 @@ export const lpAgentRegistryAbi = [
   },
   {
     type: "function",
+    name: "registerAgent",
+    stateMutability: "nonpayable",
+    inputs: [
+      { name: "operator", type: "address" },
+      { name: "metadataURI", type: "string" },
+    ],
+    outputs: [{ name: "agentId", type: "uint256" }],
+  },
+  {
+    type: "function",
     name: "agentIdByOperator",
     stateMutability: "view",
     inputs: [{ name: "operator", type: "address" }],

@@ -66,7 +66,7 @@ Solidity + Foundry（Mantle Sepolia）· TypeScript + viem · React + Vite · Op
 
 | 网络 | 合约 | 地址 |
 | --- | --- | --- |
-| Mantle Sepolia (chainId 5003) | LPAgentRegistry | _部署后回填_ |
+| Mantle Sepolia (chainId 5003) | LPAgentRegistry | [`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`](https://explorer.sepolia.mantle.xyz/address/0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF) |
 
 部署脚本：[contracts/script/Deploy.s.sol](contracts/script/Deploy.s.sol)（签名广播由项目作者本人执行）。
 
@@ -74,7 +74,7 @@ Solidity + Foundry（Mantle Sepolia）· TypeScript + viem · React + Vite · Op
 
 > 注意：**15:59 为硬截止（UTC），非当日 23:59**，请提前提交。
 
-- [ ] 部署 LPAgentRegistry 到 Mantle Sepolia，回填上表地址
+- [x] 部署 LPAgentRegistry 到 Mantle Sepolia，回填上表地址（`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`）
 - [ ] 录制 demo 视频（脚本见 [docs/demo-script.md](docs/demo-script.md)）
 - [ ] 在 X 发带 `#MantleAIHackathon` 的 Thread：pitch + demo 视频 + 本仓库链接 + Mantle 合约地址
 - [ ] DoraHacks / HackQuest 报名提交

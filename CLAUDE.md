@@ -133,7 +133,7 @@
 - [x] 提交级 README（核心卖点、bridge-not-call 架构图、跑通步骤、合约地址回填位、诚实标注）
 - [x] demo 视频脚本 [docs/demo-script.md]（~2:10：冷开场前置高潮 + 篡改→变红→变绿 + 英文字幕）
 - [x] pitch + 路演稿 [docs/pitch.md]（一句话/电梯陈述/Proof 段/8 页大纲/rubric 论证映射/评委追问应答）
-- [ ] **部署合约 → 回填 README 地址**（最高杠杆：否则核验只能 DEMO 演示；由我本人执行）
+- [x] **合约已部署 Mantle Sepolia + 链上核验 + 回填 README/web**（`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`，owner=burner，counts=0）
 - [ ] 录制 demo 视频（按脚本；由我本人）
 - [ ] 前端部署 Vercel（`npm run build` 后；由我本人）
 - [ ] **浏览器核对 DoraHacks BUIDL 表单逐字要求**（该页无法程序抓取；由我本人）

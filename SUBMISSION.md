@@ -9,10 +9,10 @@
 ✅ 代码全部写完 + 本地测试全绿（合约 34 / agent 21 / web 8）
 ✅ 文案 README / demo 脚本 / pitch
 ✅ GitHub 仓库  https://github.com/RichardReki/rangeclaw
-⬜ ② 部署合约     ← 你在这里
-⬜ ③ 回填地址（🤖）
+✅ ② 合约已部署 + 链上核验  0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF
+✅ ③ 地址已回填（README + web/.env.local）
 ⬜ ④ (可选) 让 agent 写真实决策上链
-⬜ ⑤ Vercel 部署   ⬜ ⑥ 录视频   ⬜ ⑦ 核对 DoraHacks 表单   ⬜ ⑧ 提交
+⬜ ⑤ Vercel 部署   ← 你在这里   ⬜ ⑥ 录视频   ⬜ ⑦ 核对 DoraHacks 表单   ⬜ ⑧ 提交
 ```
 
 ---
@@ -57,9 +57,9 @@ forge script script/Deploy.s.sol:Deploy --rpc-url https://rpc.sepolia.mantle.xyz
 
 ---
 
-## ③ 回填合约地址 🤖
-- [ ] Claude 填入 [README](README.md) "已部署合约"表
-- [ ] 填入 `web/.env.local` 的 `VITE_REGISTRY_ADDRESS`（看板切 LIVE）
+## ③ 回填合约地址 🤖 ✅ 已完成
+- [x] 填入 [README](README.md) "已部署合约"表 → `0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`
+- [x] 填入 `web/.env.local` 的 `VITE_REGISTRY_ADDRESS`（看板可切 LIVE）
 
 ## ④ （可选，加分）让 agent 写几条真实决策上链 🧑
 - 设 `ENABLE_ONCHAIN_WRITE=true` + agent operator 私钥，跑一次，让链上真有 `DecisionRecorded` 记录，demo 里"连真链核验"就有真数据。

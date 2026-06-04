@@ -12,7 +12,8 @@
 ✅ ② 合约已部署 + 链上核验  0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF
 ✅ ③ 地址已回填（README + web/.env.local）
 ✅ ④ 真实决策已上链 + boundHash 独立复算一致（decisionCount=1）
-⬜ ⑤ Vercel 部署   ← 你在这里   ⬜ ⑥ 录视频   ⬜ ⑦ 核对 DoraHacks 表单   ⬜ ⑧ 提交
+✅ ⑤ Vercel LIVE 站  https://rangeclaw.vercel.app
+⬜ ⑥ 录视频   ← 你在这里   ⬜ ⑦ 核对 DoraHacks 表单   ⬜ ⑧ 提交
 ```
 
 ---
@@ -67,7 +68,7 @@ forge script script/Deploy.s.sol:Deploy --rpc-url https://rpc.sepolia.mantle.xyz
 - decisionHash `0x59eab72b…a2c0`；boundHash `0x1f46f12a…efd8` —— 用合约同款公式从链上字段**独立重算一致**，证明 合约=agent=看板 三处哈希派生完全对齐。
 - recordDecision tx `0x1a4262d1…e39b7`（Success）。
 
-## ⑤ Vercel 部署（公开 URL，非 localhost）🧑
+## ⑤ Vercel 部署（公开 URL，非 localhost）🧑 ✅ 已上线 https://rangeclaw.vercel.app
 - [ ] [vercel.com](https://vercel.com) → New Project → 导入 `RichardReki/rangeclaw`
 - [ ] **Root Directory** 设为 `web`；Framework 自动识别 Vite；Build `npm run build`；Output `dist`
 - [ ] 环境变量：`VITE_REGISTRY_ADDRESS=<②的地址>`、`VITE_RPC_URL=https://rpc.sepolia.mantle.xyz`、`VITE_CHAIN_ID=5003`

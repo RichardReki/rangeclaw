@@ -4,6 +4,8 @@
 
 **一句话**：一个替你管理 **Byreal（Solana）** 集中流动性（CLMM）做市仓位的 AI agent——自动监控价格区间、由 agent 按确定性策略决策何时调仓/收费/降风险（AI 生成理由），并为**每一次自主决策生成可上链的承诺**（decisionHash + boundHash）；存证到 Mantle 即成可验证账本。任何人都能重算核验：这个 agent 当时确实这么决策、且没被事后篡改。
 
+**🔗 在线看板**：<https://rangeclaw.vercel.app> ｜ **链上合约（Mantle Sepolia 5003）**：[`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`](https://explorer.sepolia.mantle.xyz/address/0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF)
+
 ---
 
 ## 核心卖点：可验证的 AI 决策
@@ -75,8 +77,9 @@ Solidity + Foundry（Mantle Sepolia）· TypeScript + viem · React + Vite · Op
 > 注意：**15:59 为硬截止（UTC），非当日 23:59**，请提前提交。
 
 - [x] 部署 LPAgentRegistry 到 Mantle Sepolia，回填上表地址（`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`）
+- [x] 部署看板到 Vercel（公开 URL）：<https://rangeclaw.vercel.app>
 - [ ] 录制 demo 视频（脚本见 [docs/demo-script.md](docs/demo-script.md)）
-- [ ] 在 X 发带 `#MantleAIHackathon` 的 Thread：pitch + demo 视频 + 本仓库链接 + Mantle 合约地址
+- [ ] 在 X 发带 `#MantleAIHackathon` 的 Thread：pitch + demo 视频 + 本仓库链接 + Mantle 合约地址 + 看板 URL
 - [ ] DoraHacks / HackQuest 报名提交
 - [ ] 浏览器核对 DoraHacks BUIDL 表单逐字要求
 

@@ -135,7 +135,7 @@
 - [x] pitch + 路演稿 [docs/pitch.md]（一句话/电梯陈述/Proof 段/8 页大纲/rubric 论证映射/评委追问应答）
 - [x] **合约已部署 Mantle Sepolia + 链上核验 + 回填 README/web**（`0x15803Afbb3Eb5c6Ea71AaED89af55dE719F5F5BF`，owner=burner，counts=0）
 - [ ] 录制 demo 视频（按脚本；由我本人）
-- [ ] 前端部署 Vercel（`npm run build` 后；由我本人）
+- [x] 前端部署 Vercel：https://rangeclaw.vercel.app（LIVE 读真合约 + DEMO 可演示）
 - [ ] **浏览器核对 DoraHacks BUIDL 表单逐字要求**（该页无法程序抓取；由我本人）
 - [ ] X Thread 提交（pitch + 视频 + GitHub + Mantle 合约地址 + `#MantleAIHackathon`；由我本人）
 
